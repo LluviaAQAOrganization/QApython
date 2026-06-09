@@ -12,3 +12,6 @@ total_gorra = precio_gorra  * cantidad_gorra
 
 Total = total_camiseta + total_sudadera + total_gorra  
 print("El total de la compra es:", Total)
+
+iva = Total * 1.21
+print("El total con IVA es:", iva)  
