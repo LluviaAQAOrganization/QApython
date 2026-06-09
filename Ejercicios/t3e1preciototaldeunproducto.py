@@ -1,8 +1,3 @@
-nombre_producto = input("Nombre del producto: ")
-precio = float(input("Precio por unidad: "))
-cantidad = int(input("Cantidad a comprar: "))
-descuento = float(input("Descuento en porcentaje: "))
-
 def calcular_descuento(precio, cantidad, descuento):
     total_sin_descuento = precio * cantidad
     descuento_aplicado = total_sin_descuento * (descuento / 100)
@@ -12,6 +7,12 @@ def calcular_descuento(precio, cantidad, descuento):
 def calcular_iva(total_con_descuento):
     iva = total_con_descuento * 1.21
     return iva
+
+nombre_producto = input("Nombre del producto: ")
+precio = float(input("Precio por unidad: "))
+cantidad = int(input("Cantidad a comprar: "))
+descuento = float(input("Descuento en porcentaje: "))
+
 
 total_con_descuento = calcular_descuento(precio, cantidad, descuento)
 iva = calcular_iva(total_con_descuento) 
