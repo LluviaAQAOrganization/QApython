@@ -1,11 +1,10 @@
-def Colorganador(color):
-    if color == "azul":
-        mensaje = "VICTORIA"
-    else:
-        mensaje = "Intenta de nuevo"
-    return mensaje
-
+#Pedir a usuaria 5 veces que introduzca un color
 for i in range(5):
-    color = input("Introduce un color: ")
-    mensaje = Colorganador(color)
-    print(mensaje)
+    colorElegido = input("Introduce un color ").lower()
+    if (colorElegido == "azul"):
+        mensaje = "Premio conseguido"
+        print(mensaje)
+        break;
+    else:
+        mensaje = "Prueba otro color"
+        print(mensaje)

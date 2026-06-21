@@ -1,4 +1,3 @@
-cantidad_euros = float(input("¿Cuantos euros quieres convertir? "))
 
 def convertir_dolares (cantidad_euros):
     dolares = cantidad_euros * 1.1
@@ -7,6 +6,8 @@ def convertir_dolares (cantidad_euros):
 def convertir_libras(cantidad_euros):
     libras = cantidad_euros * 0.87
     return libras
+
+cantidad_euros = float(input("¿Cuantos euros quieres convertir? "))
 
 dolares = convertir_dolares(cantidad_euros)
 libras = convertir_libras(cantidad_euros) 
